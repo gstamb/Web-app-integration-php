@@ -29,15 +29,3 @@ services:
             - "3306:3306"
         networks:
             - default 
-    phpmyadmin:
-        image: phpmyadmin/phpmyadmin
-        environment:
-            PMA_HOST: dob-mysql
-            PMA_USER: root
-            PMA_PASSWORD: 1q2w3e4r
-        ports:
-            - "8081:80"
-        restart: always
-        networks:
-            - default
-
